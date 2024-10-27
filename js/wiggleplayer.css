@@ -1,0 +1,83 @@
+.psswiggleplayer_alignnone {
+    float: none;
+    display: block;
+}
+
+.psswiggleplayer_alignleft {
+    display: inline;
+    float: left;
+}
+
+.psswiggleplayer_aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.psswiggleplayer_alignright {
+    display: inline;
+    float: right;
+}
+
+.psswiggleplayercursor {
+    cursor: pointer;
+}
+
+#psswigglefullscreen {
+    position: relative;
+    z-index: 100000;
+}
+
+#psswigglefullscreen #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.9;
+    display: block;
+}
+
+#psswigglefullscreen #viewer_container {
+    display: block;
+    position: absolute;
+    overflow: visible;
+    padding: 15px 15px 65px 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 40px 0px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 3px 40px 0px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 3px 40px 0px rgba(119, 119, 119, 0.75);
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid #777777 \9;
+}
+
+#psswigglefullscreen #viewer {
+    overflow: hidden;
+    background-color: white;
+}
+
+#psswigglefullscreen img.viewer {
+    position: relative;
+    visibility: hidden;
+    max-width: none !important;
+}
+
+#psswigglefullscreen img.message {
+    position: absolute;
+    visibility: hidden;
+}
+
+#psswigglefullscreen #controls {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    pointer-events: none;
+}
+
+#psswigglefullscreen #controls #close {
+    pointer-events: auto;
+}
